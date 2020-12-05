@@ -11,7 +11,7 @@ public class StudentTest1 {
 		System.out.println(studentKim.studentId);
 		System.out.println();
 
-		System.out.println(studentLee.serialNum);
+		/*System.out.println(studentLee.serialNum);
 		System.out.println(studentKim.serialNum);
 		System.out.println();
 
@@ -20,7 +20,7 @@ public class StudentTest1 {
 		System.out.println(studentLee.serialNum);
 		System.out.println(studentKim.serialNum);
 		System.out.println();
-
+		*/
 	}
 
 }

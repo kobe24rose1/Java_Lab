@@ -2,7 +2,7 @@ package reference;
 
 public class Student {
 	
-	int studentID;
+	int studentId;
 	String studentName;
 	Subject korean;
 	Subject math;
@@ -12,12 +12,12 @@ public class Student {
 		math = new Subject("수학");
 	}
 	
-	public Student(int id, String name) {
-		studentID = id;
-		studentName = name;
+	public Student(int id, String name) { // constructor overloading
+		this.studentId = id;
+		this.studentName = name;
 	}
 	
-	public void setKorean(int score) {
+	public void setKorean (int score) {
 		korean.setScore(score);
 	}
 	
@@ -26,8 +26,9 @@ public class Student {
 	}
 	
 	public void showStudentInfo() {
-		int total  = korean.getScore() + math.getScore();
-		System.out.println(studentName+"의 총점은 "+total+"점 입니다.");
+		int total = korean.getScore() + math.getScore();
+		System.out.println(studentName + " 학생의 총점은 " +  total + "점 입니다.");
 	}
+	
 
 }
