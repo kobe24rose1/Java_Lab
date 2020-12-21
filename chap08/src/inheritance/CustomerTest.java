@@ -4,17 +4,10 @@ public class CustomerTest {
 
 	public static void main(String[] args) {
 		
-		Customer cLee = new Customer();
-		cLee.setCustomerId(1);
-		cLee.setCustomerName("Lee");
+		Customer cKim = new VIPCustomer(2, "Kim"); //업캐스팅
 		
-		VIPCustomer cKim = new VIPCustomer();
-		cKim.setCustomerId(2);
-		cKim.setCustomerName("Kim");
-		
-		System.out.println(cLee.showCustomerInfo());
 		System.out.println(cKim.showCustomerInfo());
-
+		
 	}
 
 }
